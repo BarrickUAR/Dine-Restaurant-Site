@@ -1,0 +1,547 @@
+:root {
+  --primary-color: #9e7f66;
+  --primary-accent-color: #111111;
+  --secondary-color: #17192b;
+  --highlight-color: #FDD6BA;
+  --light-color: #242b37;
+  --dark-color: #5c6779;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  max-width: 375px;
+  position: relative;
+  margin: 0 auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: League Spartan;
+}
+
+.hero {
+  width: 375px;
+}
+
+.header {
+  background-color: black;
+  text-align: center;
+  max-width: 375px;
+  height: 500px;
+}
+
+.header h3 {
+  color: #FFFFFF;
+  padding-bottom: 21px;
+}
+
+.header h4 {
+  color: #FFFFFF;
+  font-family: League Spartan;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-bottom: 21px;
+}
+
+.header p {
+
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 53px;
+}
+
+
+
+.btnHeader {
+  border: 1px solid white;
+  padding: 25px 55px 25px 55px;
+  color: #FFFFFF;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+
+}
+
+.btnHeader:hover {
+  background-color: var(--dark-color);
+}
+
+.header {
+  text-align: center;
+}
+
+.promotion,
+.promotion2,
+.highlights h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
+
+}
+
+
+.promotion,
+.promotion2,
+.highlights p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 13px;
+
+}
+
+
+.promotion img {
+  width: 327px;
+  padding-left: 46px;
+  position: relative;
+  top: -120px;
+}
+
+.promotion2 {
+  padding-bottom: 100px;
+}
+
+.line {
+  height: 7px;
+}
+
+.highlights {
+  text-align: center;
+  background-color: var(--primary-accent-color);
+  color: white;
+  padding-top: 115px;
+  padding-inline: 24px;
+  max-width: 375px;
+  height: 1850px;
+}
+
+.highlights img {
+  padding-top: 85px;
+}
+
+.highlights h2 {
+  padding-top: 36px;
+}
+
+
+
+.footer img {
+  width: 1100px;
+
+}
+
+footer {
+  max-width: 375px;
+}
+
+
+.footer h2 {
+  position: relative;
+  top: -220px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
+}
+
+.btnFooter {
+  position: relative;
+  top: -170px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  padding: 25px 55px 25px 55px;
+  color: white;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  margin-left: 65px;
+}
+
+.contact {
+  max-width: 375px;
+  max-height: 440px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: var(--primary-accent-color);
+  color: white;
+  margin-top: -105px;
+}
+
+.contact h2 {
+  padding-top: 80px;
+  width: 375px;
+}
+
+.contact p {
+  padding-top: 42px;
+}
+
+
+
+/*  Tablet Version Start   */
+
+@media (min-width: 768px) {
+
+  .container,
+  .hero,
+  .header,
+  .highlights,
+  .footer,
+  .contact {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .header h3 {
+    margin: auto;
+    font-size: 103px;
+
+  }
+
+  .header p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+  }
+
+  .promotion h2 {
+    padding-bottom: 27px;
+
+  }
+
+  .promotion p {
+    padding-bottom: 118px;
+  }
+
+  .promotion img {
+    position: relative;
+    padding-top: 50px;
+    width: 600px;
+    left: 65px;
+  }
+
+  .promotion h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  .promotion p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .promotion2 p {
+    padding-top: 27px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .promotion2 img {
+    width: 573px;
+    margin: auto;
+    padding-bottom: 102px;
+  }
+
+  .highlights {
+    width: 768px;
+    height: 1240px;
+    padding-left: 97px;
+    padding-right: 98px;
+  }
+
+  .highlights h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding-right: 60px;
+  }
+
+  .highlights h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    padding-right: 50px;
+
+  }
+
+
+  .highlights p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 60px;
+
+  }
+
+  .highlightstext {
+    padding-bottom: 55px;
+  }
+
+  .recipe {
+    display: flex;
+  }
+
+  .recipe img {
+    width: 300px;
+    height: 200px;
+
+  }
+
+  .recipetext {
+    text-align: center;
+  }
+
+
+  .reservation {
+    position: relative;
+    width: 768px;
+    max-height: 768px;
+  }
+
+
+
+  .reservation h2 {
+    position: relative;
+    left: 5px;
+    top: -300px;
+  }
+
+
+  .btnFooter {
+    position: relative;
+    left: 195px;
+    top: -220px;
+  }
+
+  .contact {
+    text-align: center;
+    max-width: 768px;
+    max-height: 1200px;
+
+  }
+
+  .contact h2 {
+    margin: auto;
+  }
+
+
+}
+
+/*  Tablet Version End   */
+
+
+
+/*  PC Version Start   */
+
+@media (min-width: 1440px) {
+
+  .container,
+  .hero,
+  .header,
+  .highlights,
+  .footer,
+  .contact {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+
+
+  .header p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+  }
+
+  .promotion h2 {
+    padding-bottom: 27px;
+
+  }
+
+  .promotion p {
+    padding-bottom: 118px;
+  }
+
+
+
+
+  .promotion img {
+    position: relative;
+    padding-top: 50px;
+    width: 600px;
+    left: 65px;
+  }
+
+  .promotion h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+
+  .promotion p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .promotion2 p {
+    padding-top: 27px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+
+
+  }
+
+  .promotion2 img {
+    width: 573px;
+    margin: auto;
+    padding-bottom: 102px;
+  }
+
+  .highlights {
+    display: grid;
+    grid-area: span 2 2 2 2;
+    padding-left: 97px;
+    padding-right: 98px;
+    width: 768px;
+    max-width: 1200px;
+
+  }
+
+
+  .highlights h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding-right: 60px;
+  }
+
+  .highlights h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    padding-right: 50px;
+
+  }
+
+  .highlights p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 60px;
+
+  }
+
+  .reservation {
+    position: relative;
+    max-width: 1100px;
+    max-width: 768px;
+  }
+
+  .reservation h2 {
+    position: relative;
+    left: 5px;
+    top: -300px;
+  }
+
+  .btnFooter {
+    position: relative;
+    left: 195px;
+    top: -220px;
+  }
+
+  .contact {
+    text-align: center;
+    max-width: 768px;
+    max-height: 1200px;
+
+  }
+
+  .contact h2 {
+    margin: auto;
+  }
+
+
+}
